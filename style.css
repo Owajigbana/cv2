@@ -1,0 +1,390 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.main {
+  background: #fdc8b7;
+  z-index: 2;
+  transition: 0.6s;
+}
+
+.main  i{
+margin-left: 90%;
+margin-top: 3%;
+}
+
+.active{
+  color: #00a79d;
+}
+
+.main ul{
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+ .main ul li{
+  padding: 10%;
+  list-style: none;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li:hover  a{
+  text-decoration: none;
+  color: #fff;
+}
+
+li:hover {
+  transform: translateX(10%);
+  transition: 0.6s;
+}
+/* the first page */
+img, .pic, .main{
+  top: 4%;
+  height: 92%;
+  width:95%;
+  object-fit: cover;
+}
+
+/* refactoring properties */
+img,.pageOne, .nav, .pic, .main, .footer, .container, #piechart, .content, #head, .num, .logo, .main ul {
+  position: absolute;
+}
+
+.nav, .logo, .main i, .num, .main ul li, .btn{
+  cursor: pointer;
+}
+
+.equal, h5, .projects h3{
+  font-size: 2rem;
+}
+
+.num a, .content, .projects a, .logo a, li a{
+  color:#fff;
+}
+
+.top{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  top: 6%;
+  left: 10%;
+  border: 2px solid #fff;
+  width: 90px;
+  padding: 10px;
+  transform: skew(-15deg);
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.logo:hover{
+  border: 2px solid #000;
+  transition: 0.5s;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.nav{
+  top: 6%;
+  left: 85%;
+}
+
+.nav:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.pageOne{
+  top: 37%;
+  left:35%;
+  width: 700px;
+}
+
+.person{
+  color: #293462;
+}
+
+.braceTop, .braceBottom{
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.braceBottom{
+  margin-left: 60%;
+}
+
+#para{
+  padding: 3% 2% 2% 20%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+  margin: 0;
+}
+
+.name{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.btn{
+  border-radius: 0px;
+  font-size: 1.3rem;
+  padding: 4px 8px;
+  background: #fff;
+  box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.3);
+  letter-spacing: 4px;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #000;
+}
+
+.btn:hover {
+transform: translateY(-9%);
+transition: 0.5s;
+}
+
+.num{
+  top:81%;
+  left: 89%;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+ .num a{
+   padding: 15px;
+ }
+
+ .num:hover{
+   transform: translateX(10%);
+   transition: 0.5s;
+ }
+
+ /* the second page (about me page) */
+#head{
+  top: 35%;
+  left: 10%;
+  font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.content{
+  top: 20%;
+  left: 30%;
+  width: 700px;
+  font-size: 0.9rem;
+}
+
+strong{
+  font-size: 1.6rem;
+}
+
+/* the skill section thrid page*/
+.pic{
+  background: #a4d7e1;
+}
+
+#piechart{
+  top: 30%;
+  left: 27%;
+}
+
+.chart{
+display: none;
+}
+
+/* the Portfolio section fourth page*/
+.container{
+  top: 30%;
+  left:55%;
+  width: 30%;
+}
+
+.projects{
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 95%;
+}
+
+.projects a{
+  text-decoration: none;
+}
+
+.projects:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.projects h3{
+  font-weight: 900;
+}
+
+/* the footer section */
+.footer{
+  left: 4%;
+  top: 65%;
+}
+
+.footer p{
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: 1%;
+  text-align: center;
+}
+
+@media (max-height : 568px) {
+  .nav, .far, .num, .exit{
+    font-size: 1.6rem;
+  }
+
+  .logo{
+    width: 60px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  .pageOne{
+    left:11%;
+    width: 270px;
+  }
+  #para{
+    padding-top: 1%;
+  }
+
+  h5, .equal, .braceTop, .braceBottom{
+    font-size: 1rem;
+  }
+
+  p, .btn{
+    font-size: 0.7rem;
+  }
+
+  .name{
+    font-size: 1.2rem;
+  }
+
+  .footer p{
+    font-size: 0.8rem;
+  }
+
+  .num{
+    top:80%;
+    left: 69%;
+  }
+
+  .main ul li{
+   padding: 15%;
+   font-size: 1rem;
+ }
+
+/* the second page (about me page) */
+  #head{
+    top: 12%;
+    left: 35%;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .content{
+    top: 29%;
+    left: 10%;
+    color: #fff;
+    width: 280px;
+    font-size: 0.35rem;
+  }
+
+  strong{
+    font-size: 0.85rem;
+  }
+
+  /* the skill section thrid page*/
+  #piechart{
+  display: none;
+  }
+
+  .chart{
+    position: absolute;
+    top:25%;
+    left:8%;
+    display: block;
+  }
+
+  .chart h3{
+    font-size: 1rem;
+  }
+
+  .chart ol{
+    font-size: 0.8rem;
+  }
+
+  /* the Portfolio section fourth page*/
+  .container{
+    top: 27%;
+    left:5%;
+    width: 60%;
+    height: 20%;
+  }
+
+  .projects{
+    width: 95%;
+    margin-bottom: 2%;
+  }
+
+  .projects h3{
+    font-size: 1rem;
+  }
+}
+
+@media (min-height : 768px) {
+  .pageOne{
+    left:40%;
+    width: 400px;
+  }
+
+/* the second page (about me page) */
+  #head{
+    top: 12%;
+    left: 35%;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .content{
+    top: 25%;
+    left: 11%;
+    width: 650px;
+  }
+
+  /* the skill section */
+  #piechart{
+    top: 30%;
+    left: 5%;
+  }
+
+  /* the Portfolio section fourth page*/
+  .projects{
+    width: 105%;
+  }
+}
